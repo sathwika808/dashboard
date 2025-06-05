@@ -1,0 +1,26 @@
+<div>
+    <form class="form">
+        <div class="div">
+            <label for ="Name">Name</label>
+            <input class="bar" [(ngModel)] = "name" name="name" type = "text"/>
+        </div>
+        <div class="div">
+            <label for ="Subject">Suject</label>
+            <input  class="bar"  [(ngModel)] = "sub" type = "text" name="subject"/>
+        </div>
+        <div class="div">
+            <label for ="testScore1">Test score 1</label>
+            <input   class="bar" [(ngModel)] = "ts1" type = "number" name="testscroe1"/>
+        </div>
+        <div class="div">
+            <label for ="testScore2">Test score 2</label>
+            <input   class="bar" [(ngModel)] = "ts2" type = "number" name="testscore2"/>
+        </div>
+        <div>
+            <button class="but" (click)="onclick()">Submit</button>
+        </div>
+       <p>{{a}}</p>
+        
+        
+    </form>
+</div>
