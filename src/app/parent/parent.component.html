@@ -1,0 +1,15 @@
+<h1>Task Manager</h1>
+ <input [(ngModel)]="taskInput" placeholder="enter task" />
+<select [(ngModel)]="prioInput">
+    <option value="High">High</option>
+    <option value="medium">medium</option>
+    <option value="low">low</option>
+
+</select>
+<div>
+    <button  (click) = addTask()>
+        See Task
+    </button>
+</div>
+<app-child [list] = "taskList"></app-child>
+

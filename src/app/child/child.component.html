@@ -1,0 +1,8 @@
+
+<ul>
+  <li *ngFor="let item of list" [ngSwitch]="item.prio">
+    <span *ngSwitchCase="'High'" [ngStyle]="{color : 'red'}">🔴urgent {{ item.name }} - High</span>
+    <span *ngSwitchCase="'medium'" [ngStyle]="{color : 'orange'}">🟡normal {{ item.name }} - Medium</span>
+    <span *ngSwitchCase="'low'" [ngStyle]="{color : 'green'}">🟢no problem  {{ item.name }} - Low</span>
+  </li>
+</ul>

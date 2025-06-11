@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './comp.component.css'
 })
 export class CompComponent {
+  
   name = "" ; 
   sub = "";
   ts1=0;
